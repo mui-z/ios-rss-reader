@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct WebSite {
+struct RssFeed {
 	let title: String
 	let rssUrl: URL
 	let lastUpdateDate: Date
+	let articles: [Article]
 }

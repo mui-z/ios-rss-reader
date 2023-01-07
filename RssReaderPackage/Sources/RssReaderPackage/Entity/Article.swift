@@ -10,4 +10,5 @@ import Foundation
 struct Article {
 	let title: String
 	let url: URL
+	let summary: String
 }

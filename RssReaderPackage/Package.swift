@@ -15,7 +15,9 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-		.package(url: "https://github.com/crane-hiromu/CombineStorable.git", from: "1.1.0")
+		.package(url: "https://github.com/crane-hiromu/CombineStorable.git", from: "1.1.0"),
+		.package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.6.1")),
+		.package(url: "https://github.com/nmdias/FeedKit.git", from: "9.1.2")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -23,7 +25,9 @@ let package = Package(
         .target(
             name: "RssReaderPackage",
             dependencies: [
-				"CombineStorable"
+				"CombineStorable",
+				"Alamofire",
+				"FeedKit"
 			]),
         .testTarget(
             name: "RssReaderPackageTests",
