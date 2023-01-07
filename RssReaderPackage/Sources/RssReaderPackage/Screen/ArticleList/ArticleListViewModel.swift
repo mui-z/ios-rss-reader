@@ -4,7 +4,7 @@ import Combine
 import CombineStorable
 
 // MARK: - ViewModel
-final class {{ name }}ViewModel: NSObject, ObservableObject, Storable {
+final class ArticleListViewModel: NSObject, ObservableObject, Storable {
 	let input: Input
 	let output: Output
 	@ObservedObject var binding: Binding
@@ -23,7 +23,7 @@ final class {{ name }}ViewModel: NSObject, ObservableObject, Storable {
 }
 
 // MARK: - Property
-extension {{ name }}ViewModel {
+extension ArticleListViewModel {
 	final class Input {
 		let didTapButton: PassthroughSubject<Void, Never>
 
@@ -48,7 +48,7 @@ extension {{ name }}ViewModel {
 }
 
 // MARK: Private
-private extension {{ name }}ViewModel {
+private extension ArticleListViewModel {
 	func bind(input: Input, output: Output, binding: Binding) {
 		binding.objectWillChange
 			.sink { [weak self] _ in
