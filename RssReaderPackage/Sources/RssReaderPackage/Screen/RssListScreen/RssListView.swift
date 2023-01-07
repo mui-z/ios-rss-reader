@@ -4,11 +4,16 @@ struct RssListView: View {
     @StateObject var viewModel: RssListViewModel
 
     var body: some View {
-        Button(action: {
-            viewModel.input.didTapButton.send(())
-        }, label: {
-            Text("Tap!")
-        })
+		List {
+			HStack {
+				Text("ios new site")
+				Spacer()
+			}
+			HStack {
+				Text("ios new site")
+				Spacer()
+			}
+		}
     }
 }
 

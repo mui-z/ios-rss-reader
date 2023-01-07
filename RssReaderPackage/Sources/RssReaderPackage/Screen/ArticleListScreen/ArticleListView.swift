@@ -7,7 +7,7 @@ struct ArticleListView: View {
         Button(action: {
             viewModel.input.didTapButton.send(())
         }, label: {
-            Text("Tap!")
+            Text("Hello World!")
         })
     }
 }

@@ -12,7 +12,7 @@ import RssReaderPackage
 struct RssReaderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			RootView()
         }
     }
 }

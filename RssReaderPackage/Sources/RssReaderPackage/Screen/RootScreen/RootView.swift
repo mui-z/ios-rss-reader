@@ -1,14 +1,17 @@
 import SwiftUI
 
-struct RootView: View {
+public struct RootView: View {
     @StateObject var viewModel: RootViewModel
+	
+	public init() {
+		self._viewModel = StateObject(wrappedValue: RootViewModel())
+	}
 
-    var body: some View {
-        Button(action: {
-            viewModel.input.didTapButton.send(())
-        }, label: {
-            Text("Tap!")
-        })
+    public var body: some View {
+		NavigationStack {
+			RssListView(viewModel: .init())
+				.navigationTitle("RSS List")
+		}
     }
 }
 
