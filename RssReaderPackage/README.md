@@ -1,3 +1,3 @@
-# SpmSwiftUITemplatePackage
+# RssReaderPackage
 
 A description of this package.

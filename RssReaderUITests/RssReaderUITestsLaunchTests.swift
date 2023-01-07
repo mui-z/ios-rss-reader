@@ -1,13 +1,13 @@
 //
-//  SpmSwiftUITemplateUITestsLaunchTests.swift
-//  SpmSwiftUITemplateUITests
+//  RssReaderUITestsLaunchTests.swift
+//  RssReaderUITests
 //
 //  Created by osushi on 2022/03/05.
 //
 
 import XCTest
 
-class SpmSwiftUITemplateUITestsLaunchTests: XCTestCase {
+class RssReaderUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

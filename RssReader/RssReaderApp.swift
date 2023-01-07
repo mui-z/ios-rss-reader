@@ -1,15 +1,15 @@
 //
-//  SpmSwiftUITemplateApp.swift
-//  SpmSwiftUITemplate
+//  RssReaderApp.swift
+//  RssReader
 //
 //  Created by osushi on 2022/03/05.
 //
 
 import SwiftUI
-import SpmSwiftUITemplatePackage
+import RssReaderPackage
 
 @main
-struct SpmSwiftUITemplateApp: App {
+struct RssReaderApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

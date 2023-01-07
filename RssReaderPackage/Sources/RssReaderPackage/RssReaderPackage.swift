@@ -1,4 +1,4 @@
-public struct SpmSwiftUITemplatePackage {
+public struct RssReaderPackage {
     public private(set) var text = "Hello, World!"
 
     public init() {

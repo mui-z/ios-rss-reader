@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SpmSwiftUITemplatePackage">
+      location = "group:RssReaderPackage">
    </FileRef>
    <FileRef
-      location = "group:SpmSwiftUITemplate.xcodeproj">
+      location = "group:RssReader.xcodeproj">
    </FileRef>
 </Workspace>
